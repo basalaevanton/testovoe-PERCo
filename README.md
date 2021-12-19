@@ -1,43 +1,14 @@
-# Стартовая сборка React TS.
+# Тестовое задание Perco.
+
+## Стек
 
 - typescript
-- redux, redux thunk, redux devtools
-- react router dom
-- sass
+- redux,
 - material UI
-- classnames
 - normalize.css
-- axios
-- eslint, stylelint, prettier
-- husky
--
+- axios, (https://picsum.photos/)
 
-## Layout
+## Задание
 
-- layout (header, body, footer)
-
-## Hooks
-
-- useScrollY
-- useAction & use TypedSelector (for redux)
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm run start`
-
-старт dev разработки
-
-### `git commit -m "..."`
-
-npm run build
-npm run stylelint
-npm run git add
-npm run git push
-npm run prettier
-
-### `npm run debug`
-
-Debug с помощью vsCode
-После запуска нажать 'F5'
+- Задача:
+  Необходимо сверстать небольшую фотогалерею на несколько десятков изображений. Макет и концепт нужно придумать самостоятельно. Каждое изображение должно открываться в отдельном лайтбоксе, с возможностью поставить ему лайк и оставить комментарий под ним. (Сохранять где-либо лайки и комментарии не нужно, достаточно визуальной реализации).

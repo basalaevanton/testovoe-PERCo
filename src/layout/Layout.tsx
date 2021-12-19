@@ -2,15 +2,12 @@ import { LayoutProps } from "./Layout.props";
 import styles from "./Layout.module.scss";
 
 import React, { FunctionComponent } from "react";
-import { Header } from "./Header/Header";
 
 import cn from "classnames";
 
 const Layout = ({ children }: LayoutProps): JSX.Element => {
   return (
     <div className={cn(styles.wrapper)}>
-      <Header className={styles.header} />
-
       <div className={styles.body}>{children}</div>
     </div>
   );
