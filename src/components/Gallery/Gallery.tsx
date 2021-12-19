@@ -1,14 +1,6 @@
 import React from "react";
 import { GalleryProps } from "./Gallery.props";
-import {
-  Box,
-  CircularProgress,
-  ImageList,
-  ImageListItem,
-  Modal,
-  TextField,
-  Typography,
-} from "@mui/material";
+import { ImageList, ImageListItem } from "@mui/material";
 import { ImageInterface } from "../../interfaces/Image.interface";
 
 export const Gallery = ({

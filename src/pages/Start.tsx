@@ -3,15 +3,7 @@ import axios from "axios";
 import { withLayout } from "../layout/Layout";
 import { ImageInterface } from "../interfaces/Image.interface";
 import { Gallery, ModalComponent } from "../components";
-import {
-  Box,
-  CircularProgress,
-  ImageList,
-  ImageListItem,
-  Modal,
-  TextField,
-  Typography,
-} from "@mui/material";
+import { CircularProgress } from "@mui/material";
 
 import { ModalInterface } from "../interfaces/Modal.interface";
 
@@ -34,12 +26,12 @@ const Start = () => {
     setModal({ ...modal, like: !modal.like });
   };
 
-  const data = async (page = 1, limit = 10) => {
+  const data = async (page = 2, limit = 30) => {
     try {
       setLoading(true);
 
       const response = await axios.get("https://picsum.photos/v2/list", {
-        params: { _page: page, _limit: limit },
+        params: { page: page, limit: limit },
       });
 
       setImages(response.data);
